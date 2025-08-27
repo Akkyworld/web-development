@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Order Page</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Place Your Order</h1>
+        <form id="orderForm">
+            <div class="form-group">
+                <label for="product">Product:</label>
+                <select id="product" name="product">
+                    <option value="item1">Iphone 11 Price: Rs. 50,000</option>
+
+                    <option value="item2">Iphone 12 Price: Rs. 60,000</option>
+                    <option value="item3">Iphone 13 Price: Rs. 70,000</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+            </div>
+            
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Shipping Address:</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+            <button type="submit">Place Order</button>
+        </form>
+        <div id="orderConfirmation" class="hidden">
+            <h2>Order Confirmed!</h2>
+            <p>Thank you for your order, <span id="confirmName"></span>!</p>
+            <p>Your order for <span id="confirmQuantity"></span> of <span id="confirmProduct"></span> will be shipped to <span id="confirmAddress"></span>.</p>
+        </div>
+    </div>
+    <script src="order.js"></script>
+</body>
+</html>

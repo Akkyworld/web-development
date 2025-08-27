@@ -1,0 +1,18 @@
+.social-link {
+        display: inline-block;
+        margin-right: 10px;
+        color: blue;
+        text-decoration: none;
+    }
+    .social-link:hover {
+        fill: blue;
+        opacity: 0.8;
+    }
+    .social-icon {
+        width: 24px;
+        height: 24px;
+    }
+    .social-icon:hover {
+        fill: blue;
+        opacity: 0.8;
+    }
