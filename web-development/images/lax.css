@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-body {
+body{
     font-family: 'Times New Roman', Times, serif;
     background: #f0f0f0;
     min-height: 100vh;
@@ -97,8 +97,8 @@ body {
 }
 
 .profile-image {
-    width: 100%; /* Take full available width up to max-width */
-    max-width: 350px; /* Limit maximum width for proper proportions */
+    width: 100%;
+    max-width: 350px;
     height: 400px;
     border-radius: 15px;
     overflow: hidden;
